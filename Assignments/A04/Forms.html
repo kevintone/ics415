@@ -5,58 +5,59 @@
     <title>Assignment 1</title>
 </head>
 <body>
-<table border="1" style="border-collapse: collapse;width:100%;float:left;">
-    <!-- Header Section-->
-    <tr ><td align="center" valign="middle"> <h1> Assignment 1 </h1></td></tr>
+<table border="1" style="width:100%;">
+    <!--Header Section -->
+    <tr>
+        <th colspan="2">
+            <h1>Kevins Website</h1>
+        </th>
+    </tr>
 
-    <!-- Nav Bar -->
-    <tr><td> <a href="A01.html">Home</a> <a href="Forms.html"> Forms</a></td></tr>
+    <!--Nav Bar -->
+    <tr>
+        <td colspan="2">
+            <a href="A01.html">Home</a>
+            <a href="Forms.html"> Forms</a>
+        </td>
+    </tr>
 
-    <!-- Left Column-->
-    <tr><td>
+    <!--Left Column-->
+    <tr>
+        <td style="width:25%; text-align: center;" >
+            <p>
+                <b>Forms Summary</b>
+            </p>
+            <p> HTML supports several different types of input. </p>
+        </td>
 
-        <table border="0" width="20%" style="border-collapse: collapse; float: left;">
-            <tr><td align="center" valign="middle"><h2>Forms Summary</h2></td></tr>
-            <tr><td align="center" valign="middle"><p> HTML supports several different types of input.
-        </table>
-        <!-- Right Column -->
-
-        <table border="0" width="75%" style="border-left:1px; border-collapse: inherit;
-            float: right;">
-            <tr><td><h3> Forms </h3></td></tr>
-            <tr><td><p> The following is a text input: </p></td></tr>
-            <tr><td><form>
-                Username: <input type="text" name="user">
-            </form></td></tr>
-            <tr><td><p>Then a password input: </p></td></tr>
-            <tr><td><form>
+        <!--Right Column -->
+        <td style="width:75%">
+            <h2>Forms</h2>
+            <form name="login" action="Forms.html" method="get">
+                <p> The following is a text input: </p>
+                Username: <input type="text" name="username">
+                <p> Then a password input: </p>
                 Password: <input type="text" name="password">
-            </form></td></tr>
-            <tr><td><p>Radio Buttons: </p></td></tr>
-            <tr><td><form>
-                <input type="radio" name="sex" value="boy"> Male
+                <p>Radio Buttons: </p>
+                <input type="radio" name="sex" value="Male"> Male
                 <br>
-                <input type="radio" name="sex" value="girl"> Female
-            </form></td></tr>
-            <tr><td><p>Checkboxes: </p></td></tr>
-            <tr><td><form>
+                <input type="radio" name="sex" value="Female"> Female
+                <p>Checkboxes:</p>
                 <input type="checkbox" name="Windows" value="windowsOS"> Windows
                 <br>
-                <input type="checkbox" name="Mac" value="MacOS">  Mac OS
+                <input type="checkbox"  name="Mac" value="MacOS">  Mac OS
                 <br>
                 <input type="checkbox" name="Linux" value="linux"> Linux
-            </form></td></tr>
-            <tr><td><p>Submit the Form: </p></td></tr>
-            <tr><td><form name="submit" action="Forms.html" method="get">
+                <br>
+                <p>Submit the Form:</p>
                 <input type="submit" value="Submit">
-            </form></td></tr>
-
-
-        </table>
-
-    </td></tr>
+            </form>
+        </td>
+    </tr>
     <!-- Copyright Section -->
-    <tr><td align="center" valign="middle"> Copyright (C) Kevin Tone </Td></tr>
+    <tr>
+        <td colspan="2" style="text-align: center;"> Copyright (C) Kevin Tone </td>
+    </tr>
 </table>
 
 
