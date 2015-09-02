@@ -1,0 +1,63 @@
+font{
+    font-family: 'Rufina', serif;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height:100%;
+    width:100%;
+}
+
+#wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#sidebar {
+    width: 25%;
+    height: 100%;
+    float: left;
+    text-align: center;
+
+}
+
+#main {
+    float: right;
+    width: 73%;
+    height: 100%;
+    padding-left: 5px;
+    font-family: 'Rufina', serif;
+    border-left: 1px solid black;
+
+}
+
+p{
+    font-family: 'Rufina',serif;
+}
+header {
+    height: 50px;
+    font-size: 30px;
+    font-family: 'Rufina', serif;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+nav {
+    height: 50px;
+    padding-top: 24px;
+    padding-left: 10px;
+    border-bottom: 1px solid black;
+}
+
+footer {
+    text-align: center;
+    height: 30px;
+    font-size: 10px;
+    padding-top: 15px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    clear: both;
+}
+
