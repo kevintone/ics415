@@ -3,96 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <title>Assignment 5</title>
-
-    <!--Styling Sheet -->
-    <style>
-        html {
-            height: 100%;
-        }
-        body {
-            height: 100%;
-            weight: 100%;
-        }
-        header {
-            background-color: orange;
-            height: 25%;
-            text-align: center;
-            padding: 0;
-            border: 1px solid black;
-        }
-        nav {
-            background-color:lightblue;
-            height: 50px;
-        }
-
-        #sidebar{
-            float:left;
-            width: 25%;
-            background-color:lightcyan
-            min-height:100%;
-        }
-        #main{
-            float: right;
-            text-align: left;
-            width: 70%;
-            min-height: 100%;
-        }
-        footer{
-            background-color:lightblue;
-            height: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="layout">
+    <link href='https://fonts.googleapis.com/css?family=Rufina:400,700' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
-<table style="width: 100%; height:100%;">
-    <!-- Header -->
-    <tr>
-        <th>
-            <header>ICS 415: Assignment 5</header>
-        </th>
-        <!--header><h3> ICS 415: Assignment 5 </h3></header>-->
-    </tr>
+<div id="wrap">
+    <header><b> Assignment 5: Using CSS</b></header>
+    <nav>
+        <a href="Home.html"> Home </a> |
+        <a href="Two.html"> Forms </a> |
+        <a href="Three.html"> Extras </a> |
+    </nav>
+    <div id="header">
 
-    <!-- Nav Bar-->
-    <tr>
-        <td>
-            <nav>
-                <a href="Home.html">Home </a> |
-                <a href="Two.html">Two </a> |
-                <a href="Three.html">Three </a> |
-            </nav>
-        </td>
-    </tr>
+    </div>
 
-    <!-- Side Bar -->
-    <tr>
-        <td style="width:25%; vertical-align: top;">
-            <p> Sidebar</p>
-        </td>
+    <div id="sidebar">
+        <p>
+            <b> Summary</b>
+        </p>
+        <p> HTML supports tables.</p>
+        <p> HTML supports three different types of lists; unordered, ordered and description. </p>
+        <!--<img src="UH_manoa.jpg" alt="Manoa" style="height:200px; width: 300px;"> -->
+    </div>
 
-        <td style="width:70% float: left;">
-            Main Page
-        </td>
-    </tr>
+    <!-- Height Auto because left border follows this column. Must go all the way down -->
+    <div id="main" style="height:auto;">
+        <h2>Home Page</h2>
+        <p> Tables: </p>
+        <table>
+            <caption> Borderless Table</caption>
+            <th> Header 1</th>
+            <tr>
+                <td>Col 1,Row 1</td>
+            </tr>
+        </table>
+        <br>
+        <table border="1">
+            <caption> Bordered Table </caption>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>Row 1,Col 1 </td>
+                <td>Row 2,Col 1 </td>
+            </tr>
+            <tr>
+                <td>Row 2,Col 1</td>
+                <td>Row 2,Col 2</td>
+            </tr>
+            <tr>
+                <td>
+                    <tf>Footer 1</tf>
+                </td>
+                <td>
+                    <tf>Footer 2</tf>
+                </td>
+            </tr>
+        </table>
+        <p>Lists: </p>
+        <ul>
+            <li>Coffee</li>
+            <li>Milk</li>
+        </ul>
+        <ol type="1">
+            <li>Coffee</li>
+            <li>Milk </li>
+        </ol>
 
-    <!-- Main Page -->
-    <tr>
-        <td style="width:75%;">
-            <p> Main Page</p>
-        </td>
-    </tr>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>white cold drink </dd>
+        </dl>
 
-    <!-- Footer -->
-    <tr>
-        <td>
-            <footer>
-                <b>Copyright (C) Kevin Tone</b>
-            </footer>
-        </td>
-    </tr>
+        <p> This page has a two column layout with header, navigation bar
+            and footer. There is a fairly large header, narrow navigation bar.</p>
+        <p> The main section takes up 75% of the page. The left is side bar is center aligned. </p>
+    </div>
 
-</table>
+    <footer><b> Copyright (C) Kevin Tone</b></footer>
+</div>
 
 </body>
 </html>

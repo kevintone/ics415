@@ -3,94 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>Assignment 5</title>
-    <style>
-        header {border:5px solid mediumpurple}
-        nav {border:1px solid black;}
-        section {border:1px solid black; position: relative; left: 25%; width: 75%;}
-        aside {border:1px solid black; position: absolute; left: 0; width: 25%}
-        footer {border:1px solid black; text-align: center; bottom: 0;}
-    </style>
+    <link rel="stylesheet" href="layout">
+    <link href='https://fonts.googleapis.com/css?family=Rufina:400,700' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
-<header>
-    <h1 style="text-align:center">Erik's Assignment 5</h1>
-</header>
-<nav>
-    <a href="/ics415F15/A05/home.html" title="Home">Home</a> |
-    <a href="/ics415F15/A05/forms.html" title="Forms">Forms</a> |
-    <a href="/ics415F15/A05/bonus.html" title="Bonus">Bonus</a>
-</nav>
-<aside style="text-align:center">
-    <h3>Summary Window</h3>
-    <p>
-        HTML supports tables.<br>
-        HTML supports three different types of lists;
-        unordered, ordered, and description.
-    </p>
-</aside>
-<section>
-    <h3>Home Page</h3>
-    <p>Tables:</p>
-    <p>Borderless Table</p>
-    <table>
-        <thead>
-        <tr>
-            <th>Header 1</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>Row 1, Col 1</td>
-        </tr>
-        </tbody>
-    </table>
-    <p>Bordered Table</p>
-    <table border="1">
-        <thead>
-        <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
-        </tr>
-        </thead>
-        <tfoot>
-        <tr>
-            <td>Footer 1</td>
-            <td>Footer 2</td>
-        </tr>
-        </tfoot>
-        <tbody>
-        <tr>
-            <td>Row 1, Col 1</td>
-            <td>Row 1, Col 2</td>
-        </tr>
-        <tr>
-            <td>Row 2, Col 1</td>
-            <td>Row 2, Col 2</td>
-        </tr>
-        </tbody>
-    </table>
-    <p>Lists:<br></p>
-    <ol>
-        <li>Coffee</li>
-        <li>Milk</li>
-    </ol>
-    <ul>
-        <li>Coffee</li>
-        <li>Milk</li>
-    </ul>
-    <dl>
-        <dt>Coffee</dt>
-        <dd>Black hot drink</dd>
-        <dt>Milk</dt>
-        <dd>White cold drink</dd>
-    </dl>
-    <p>This web page has a two column layout with header, navigation bar, and footer.
-        There is a fairly large header, narrow navigation bar. The main section of the
-        website takes up 75% of the page. The left sidebar is center aligned.</p>
-</section>
-<footer>
-    <p style="text-align:center"><a href="#">Top</a> Copyright (C) Erik Huang</p>
+<div id="wrap">
+    <header><b> Assignment 5: Using CSS</b></header>
+    <nav>
+        <a href="Home.html"> Home </a> |
+        <a href="Two.html"> Forms </a> |
+        <a href="Three.html"> Extras</a> |
+    </nav>
+    <div id="header">
 
-</footer>
+    </div>
+
+    <div id="sidebar">
+        <p>
+            <b>Extras Summary</b>
+        </p>
+        <p> HTML5 supports different types of elements/inputs!</p>
+        <!--<img src="UH_manoa.jpg" alt="Manoa" style="height:200px; width: 300px;"> -->
+    </div>
+
+    <div id="main" style="height: auto;">
+        <h2>Extra Functions of HTML5</h2>
+        <p>
+            Survery about YOU! :)
+        </p>
+        <form name="inputs" action="Three.html" method="get">
+            Month School Starts: (Month Input) <br>
+                <input type="month" name="schoolMonth"><br>
+            First Name: (Text Input) <br>
+                <input type="text" name="username"><br>
+            Last Name: (Text Input) <br>
+                <input type="text" name="password"><br>
+            Age: (Number input) <br>
+                <input type="number" name="userAge" max="150"> <br>
+            Email: (Email input) <br>
+                <input type="email" name="userEmail"><br>
+            Range: (Range Input) <br>
+                <input type="range" name="range" min="0" max="10"> <br>
+            Favorite Color: (Color Input) <br>
+                <input type="color" name="favCol"> <br>
+            Birthday: (Date Input) <br>
+                <input type="date" name="bday"> <br>
+            What month/dat is the ICS 415 Midterm 1: (Datetime Input) <br>
+                <input type="" name="midterms"> <br>
+            Enjoyment of class between 1-10, 10 being the highest:  (Number Input w/ Restrictions)<br>
+                <input type="number" name="quantity" min="1" max="10"><br>
+            Add your Git Repository: (URL Input) <br>
+                <input type="url" name="homepage"> <br>
+            Search Syllabus for the entered word: (Search Input) <br>
+                <input type="search" name="syllabusSearch"> <br>
+            Submit: (Submit Input) <br>
+                <input type="submit" name="Submit"> <br>
+
+            <br>
+
+        </form>
+
+    </div>
+
+    <footer><b> Copyright (C) Kevin Tone</b></footer>
+</div>
+
 </body>
 </html>

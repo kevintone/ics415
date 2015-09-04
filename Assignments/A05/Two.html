@@ -2,9 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="layout">
+    <link href='https://fonts.googleapis.com/css?family=Rufina:400,700' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
+<div id="wrap">
+    <header><b> Assignment 5: Using CSS</b></header>
+    <nav>
+        <a href="Home.html"> Home </a> |
+        <a href="Two.html"> Forms </a> |
+        <a href="Three.html"> Extras</a> |
+    </nav>
+    <div id="header">
+
+    </div>
+
+    <div id="sidebar">
+        <p>
+            <b>Forms Summary</b>
+        </p>
+        <p> HTML supports several different types of input. </p>
+        <!--<img src="UH_manoa.jpg" alt="Manoa" style="height:200px; width: 300px;"> -->
+    </div>
+
+    <div id="main">
+        <h2>Forms</h2>
+        <form name="login" action="Two.html" method="get">
+            <p> The following is a text input: </p>
+            Username: <input type="text" name="username">
+            <p> Then a password input: </p>
+            Password: <input type="text" name="password">
+            <p>Radio Buttons: </p>
+            <input type="radio" name="sex" value="Male"> Male
+            <br>
+            <input type="radio" name="sex" value="Female"> Female
+            <p>Checkboxes:</p>
+            <input type="checkbox" name="Windows" value="windowsOS"> Windows
+            <br>
+            <input type="checkbox"  name="Mac" value="MacOS">  Mac OS
+            <br>
+            <input type="checkbox" name="Linux" value="linux"> Linux
+            <br>
+            <p>Submit the Form:</p>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer><b> Copyright (C) Kevin Tone</b></footer>
+</div>
 
 </body>
 </html>
