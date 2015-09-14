@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Week 4</title>
+    <meta name="viewport" content="max-device-width", initial scale="1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body style="height:100%;">
+
+
+<div class="container" style="height:100%">
+    <!-- Header Section -->
+    <div class="row" style="height:25%;">
+        <div class="container-fluid;">
+            <header style="text-align: center; font-size: 40px;">
+                Javascript Week 4
+            </header>
+        </div>
+    </div>
+
+    <!-- Nav bar -->
+    <nav class="navbar navbar-default" style="height: 50px;">
+        <div style="padding-left: 20px;">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">Forms</a></li>
+                <li><a href="#">Extra</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="row">
+        <!-- Side Panel -->
+        <div class="col-md-3" style="clear:both; text-align: center;">
+            <h1> Summary </h1>
+            <br>
+            <p> Attempts to use Javascript on the webpage. This is a testing page!</p>
+        </div>
+        <!-- Main Panel -->
+        <div class="col-md-9" style="border-left: 1px solid black;">
+            <h1> Main Page</h1>
+            <br>
+            <button id="currentTime">Get Time? </button>
+            <p id="funcTime"></p>
+            <br>
+            <br>
+            <div onmousedown="mouseDown(this)" onmouseup="mouseUp(this)" style="height: 100px; width: 100px;">
+                Click me!1
+            </div>
+            <br>
+
+            <img onmouseenter="enlargeImage(this)" onmouseleave="normalImage(this)" src="UH_manoa.jpg"
+                    width="100" height="100">
+
+            <br>
+            <br>
+
+            <button id="greet"> Click me :) </button>
+            <p id="theGreeting"> </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="row">
+        <div class="col-md-12" style="height:50px; padding-top: 15px; border-top: 1px solid black; border-bottom: 1px solid black;">
+            <p style="text-align: center"><b> Copyright (C) Kevin Tone </b></p>
+        </div>
+    </div>
+</div>
+
+    <script src="jscript.js"></script>
+</body>
+</html>
