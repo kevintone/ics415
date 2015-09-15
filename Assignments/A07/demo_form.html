@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing Javascript A07</title>
+    <meta name="viewport" content="max-device-width", initialscale="1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body style="height:100%;">
+    <div class="container" style="height:100%;">
+
+        <!--  Header  -->
+        <div class="row" style="text-align: center; height: 25%;">
+            <div class="col-md-12">
+                <h1> Kevins A07 Webpage</h1>
+            </div>
+        </div>
+
+        <!-- Nav Bar  -->
+        <nav class="navbar navbar-default" style="height: 50px; padding-left: 20px;">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="demo_form.html">Main</a></li>
+                <li><a href="#"> Index </a></li>
+            </ul>
+        </nav>
+
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <h3>Summary</h3>
+                <br>
+                <p>Testing the javascript's scripts! </p>
+            </div>
+            <!-- Main bar -->
+            <div class="col-md-9" style="border-left: 1px solid darkblue">
+                <h3> Forms to use to check: </h3>
+                <p> Will check getClasses(), addClasses(elem, class) and validate Form</p>
+                <br>
+                <!-- Testing getClass/Classes() -->
+                <div class="first" onclick="getClasses(this)">
+                    <p> Class result should be ["first"] </p>
+                    <button id="testGetClass" >Test getClasses()</button>
+                    <br>
+                    <br>
+                </div>
+
+                <div class="first second" onclick="getClasses(this)">
+                    <p> Class result should be ["first", "second"] </p>
+                    <button>Test getClasses()</button>
+                    <br>
+                    <br>
+                    <p>Results: </p>
+                    <p id="printClass"> </p>
+                    <br>
+                    <br>
+                </div>
+
+                <div class="first it was" onmouseover="getClasses(this)" onclick="addClasses(this, 'animals')">
+                    <p> Uses getClasses() to check whether or not a class was added. Results of this test
+                    will appear above where the other two test's results were. Mouseover to find the current
+                    classes, mouse click to find the added classes. </p>
+                    <button> Test addClasses() </button>
+                    <br>
+                    <br>
+                </div>
+
+                <h4> Forms:</h4>
+                <p id="errorCatch">
+
+                </p>
+                <form name="myForm" action="demo_form.html" onsubmit="return validateForm()" method="get">
+                    <div class="form-group">
+                        <label for="username">Username: </label>
+                        <input type="text" name="name" id="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password: </label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm">Confirm Password: </label>
+                        <input type="password" name="confirm" id="confirm">
+                    </div>
+                    <input type="submit" value="Submit">
+
+                </form>
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="row" style="text-align: center; height: 50px; padding-top: 15px;
+                    border-top: 1px solid black; border-bottom: 1px solid black;">
+
+            <div class="col-md-12">
+                <b> Copyright (C) Kevin Tone</b>
+            </div>
+        </div>
+    </div>
+
+    <script src="myScript.js"></script>
+</body>
+</html>

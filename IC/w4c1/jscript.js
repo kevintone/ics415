@@ -1,5 +1,6 @@
 var getTime = "Get the current time:";
 document.getElementById("currentTime").onclick = getCurrentTime;
+document.getElementById("greet").onmouseover = getGreeting();
 
 function getCurrentTime(){
     document.getElementById("funcTime").innerHTML=Date();
@@ -26,8 +27,6 @@ function normalImage(obj) {
     obj.style.height = "100px";
 }
 
-
-document.getElementById("greet").onclick = getGreeting;
 
 function getGreeting() {
     var greeting = "Have A Great Day :)"
