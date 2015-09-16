@@ -10,7 +10,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body style="height:100%;">
-    <div class="container" style="height:100%;">
+    <div class="container" style="height:100%; background-color: whitesmoke;">
 
         <!--  Header  -->
         <div class="row" style="text-align: center; height: 25%;">
@@ -29,27 +29,27 @@
 
         <div class="row">
             <!-- Sidebar -->
-            <div class="col-md-3">
+            <div class="col-md-3" style="background-color: whitesmoke;">
                 <h3>Summary</h3>
                 <br>
                 <p>Testing the javascript's scripts! </p>
             </div>
             <!-- Main bar -->
-            <div class="col-md-9" style="border-left: 1px solid darkblue">
+            <div class="col-md-9" style="border-left: 1px solid darkblue; background-color: whitesmoke;">
                 <h3> Forms to use to check: </h3>
                 <p> Will check getClasses(), addClasses(elem, class) and validate Form</p>
                 <br>
                 <!-- Testing getClass/Classes() -->
-                <div class="first" onclick="getClasses(this)">
+                <div>
                     <p> Class result should be ["first"] </p>
-                    <button id="testGetClass" >Test getClasses()</button>
+                    <button class="first" id="testGetClass" onclick ="getClasses(this)">Test getClasses()</button>
                     <br>
                     <br>
                 </div>
 
-                <div class="first second" onclick="getClasses(this)">
+                <div>
                     <p> Class result should be ["first", "second"] </p>
-                    <button>Test getClasses()</button>
+                    <button class="first second" onclick="getClasses(this)">Test getClasses()</button>
                     <br>
                     <br>
                     <p>Results: </p>
@@ -98,7 +98,7 @@
 
         <!-- Footer -->
         <div class="row" style="text-align: center; height: 50px; padding-top: 15px;
-                    border-top: 1px solid black; border-bottom: 1px solid black;">
+                    border-top: 1px solid black; border-bottom: 1px solid black; background-color: whitesmoke;">
 
             <div class="col-md-12">
                 <b> Copyright (C) Kevin Tone</b>

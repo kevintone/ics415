@@ -36,7 +36,7 @@ function getClasses(elem) {
 function addClasses(elem, className) {
     var getCurrentClass = elem.className;
     if(className==undefined) {
-        className="fish";
+        className="not defined";
     }
     var updateClassString = getCurrentClass + " " + className;
     elem.className = updateClassString;
