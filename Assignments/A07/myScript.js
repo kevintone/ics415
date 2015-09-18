@@ -34,12 +34,25 @@ function getClasses(elem) {
 *
  */
 function addClasses(elem, className) {
+    var checkDuplicate = 0;
     var getCurrentClass = elem.className;
     if(className==undefined) {
         className="not defined";
     }
-    var updateClassString = getCurrentClass + " " + className;
-    elem.className = updateClassString;
+
+    var splitClasses = getCurrentClass.split(" ");
+    for(var i = 0; i < splitClasses.length; i++) {
+        if(className === splitClasses[i]) {
+            checkDuplicate = 1;
+        }
+    }
+
+    if(checkDuplicate == 0) {
+        var updateClassString = getCurrentClass + " " + className;
+        elem.className = updateClassString;
+    } else {
+        //Do Nothing..
+    }
 }
 
 /*
