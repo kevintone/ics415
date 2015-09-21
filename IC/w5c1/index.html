@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="max-device-width" initialscale="1">
+    <title>Testing JQuery #1</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container" style="height:100%; width:100%;">
+
+        <!-- Header -->
+        <div class="row">
+            <div class="container-fluid">
+                <div class="col-md-12">
+                    <h1>Kevin's JQuery Webpage</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nav Bar-->
+        <nav class="nav-navbar-default" style="width: 100%; height=25%;">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Main</a></li>
+                <li><a href="#">None</a></li>
+            </ul>
+        </nav>
+
+        <div class="row">
+            <!-- Side Bar -->
+            <div class="col-md-3" style="clear: both;">
+                <h3>Summary</h3>
+                <p> Will be testing JQuery on main part of the webpage</p>
+            </div>
+            <!-- Main Bar -->
+            <div class="col-md-9">
+                <div>
+                    <h3> Main Page</h3>
+                    <br>
+                    <h5>Testing for click on button w/ ID: </h5>
+                    <p>Press the button for a message: </p>
+                    <button id="clickTest">Click Here</button>
+                    <br>
+                    <br>
+                </div>
+                <div id="changeBack">
+                    <h5>Testing for mouseenter on different button w/ ID:</h5>
+                    <p> Mouse over the following button to make a border around this DIV: </p>
+                    <p> It will also test mouseleave when leaving the button</p>
+                    <button id="enterTest"> Move the mouse through me! </button>
+                    <br>
+                    <br>
+                </div>
+
+                <div>
+                    <h5> Testing for mouseleave on different buttons w/ ID: </h5>
+                    <p> Move the mouse on the button to delete border around this div</p>
+                    <p> Should change black when leaving the button!</p>
+                    <button id="leaveTest" style="color: red;"> Put mouse Over</button>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="row">
+            <div class="col-md-12" style="text-align:center;">
+                <b>Copyright (C) Kevin Tone</b>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="myScript.js"></script>
+
+</body>
+</html>
