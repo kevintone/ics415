@@ -18,7 +18,7 @@ $(document).ready(function(){
     });
 
     $("#postRequest").click(function(){
-        $.post("postDemo.asp",
+        $.post("postDemo",
             {
                 name: "Kevin",
                 city: "Honolulu",

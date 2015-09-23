@@ -1,0 +1,10 @@
+<%
+dim getIsland, getCity, getName
+getName = Request.Form("name")
+getCity = Request.Form("city")
+getIsland = Request.Form("island")
+
+Response.Write("Dear " & getName & ",")
+Response.Write("Hows the weather in " & getCity & "?")
+Response.Write(getIsland & "must be nice!")
+%>
