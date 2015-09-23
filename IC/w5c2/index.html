@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Using JQuery AJAX</title>
+    <meta name="viewport" content="max-device-width" initial-scale="1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="container-fluid">
+                <div class="col-md-12" style="text-align: center;">
+                    <h1>Kevin's JQuery AJAX Tests</h1>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-navbar-default">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">None</a></li>
+            </ul>
+        </nav>
+
+        <div class="row" style="clear: both;">
+            <div class="col-md-3">
+                <h3>Summary</h3>
+                <p> Tests using AJAX functions within a webpage</p>
+            </div>
+            <div class="col-md-9" style="border-left: 1px solid black;">
+                <h3>Main Page</h3>
+                <p> Uses Hide/show animations on JQuery for a simple button</p>
+                <button id="hide">Hide</button>
+                <button id="show">Show</button>
+                <br>
+                <p id="words"> Click Hide to hide this texts, then show to make it reappear! </p>
+
+                <br>
+                <br>
+                <h3> Testing Load from a local file</h3>
+                <button id="getText">Load Text From File</button>
+                <br>
+                <p id="changeText"> Text will change here to Hello World!</p>
+
+                <br>
+                <br>
+                <h3> Uses HTTP GET Request</h3>
+                <p> Returns whether or not you were successful</p>
+                <button id="getRequest">Get HTTP Request</button>
+
+                <h3> Uses HTTP POST Request</h3>
+                <p> Press the following button to check POST Request</p>
+                <button id="postRequest">Post HTTP Request</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12" style="text-align: center; height: 50px; padding-top: 15px;
+                border-top: 1px solid black; border-bottom: 1px solid black;">
+                <b>Copyright (C) Kevin Tone</b>
+            </div>
+        </div>
+    </div>
+
+    <script src="myScript.js"></script>
+</body>
+</html>
